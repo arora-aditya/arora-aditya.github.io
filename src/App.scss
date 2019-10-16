@@ -1,0 +1,28 @@
+.App {
+  .container {
+    max-width: 70%;
+    margin-left: 15%;
+    @media only screen and (max-width: 992px) and (min-width: 768px){
+      max-width: 85%;
+      margin-left: 7.5%;
+    }
+    @media only screen and (max-width: 769px) and (min-width: 577px){
+      max-width: 85%;
+      margin-left: 7.5%;
+    }
+    @media only screen and (max-width: 577px){
+      max-width: 90%;
+      margin-left: 5%;
+    }
+  }
+  .projects {
+    display: flex;
+    overflow-y: scroll;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    &::-webkit-scrollbar {
+      width: 0px;  /* Remove scrollbar space */
+      background: transparent;  /* Optional: just make scrollbar invisible */
+    }
+  }
+}

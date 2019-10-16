@@ -3,6 +3,7 @@ import './index.scss';
 
 
 interface CardProp {
+  key?: number;
   link: string;
   image: string;
   image_alt: string;
@@ -13,7 +14,7 @@ interface CardProp {
 export default function Card(props: CardProp) {
   const [state, setState] = useState(props);
   
-  return (<a className="card" href={state.link}>
+  return (<a className="card" href={state.link} key={state.key}>
             <div className="hover-up">
               <div className="box-shadow">
                 <img src={state.image} alt={state.image_alt} />

@@ -1,3 +1,29 @@
 .experience {
-
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  @media only screen and (max-width: 769px){
+    flex-direction: column;
+    align-items: left;
+  }
+  .title{
+    margin-bottom: 0.25rem;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    .img-responsive {
+      width: 10rem;
+      margin-right: 1rem;
+      @media only screen and (max-width: 769px){
+        margin-bottom: 1rem;
+      }
+    }
+  }
+  .points{
+    margin-top: 1.5rem;
+    line-height: 2rem;
+  }
 }

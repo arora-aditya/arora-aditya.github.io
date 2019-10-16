@@ -1,0 +1,44 @@
+[ 
+  {
+    "link": "https://github.com/waterlooworks2",
+    "image_alt": "waterlooworks2 logo",
+    "title": "WaterlooWorks2",
+    "description": "For better searching and filtering of jobs with a responsive UI!"
+  },
+  {
+    "link": "https://github.com/arora-aditya/just-another-ray-tracer",
+    "image_alt": "raytracer output",
+    "title": "RayTracer",
+    "description": "A raytracer built in Rust, with support for shaders, materials and objects!"
+  },
+  {
+    "link": "https://devpost.com/software/leapmetry-a9djbw",
+    "image_alt": "leapmetry logo",
+    "title": "LeapMetry",
+    "description": "A project to allow the speech impaired to speak using their hands!"
+  },
+  {
+    "link": "https://github.com/arora-aditya/kaggle",
+    "image_alt": "kaggle logo",
+    "title": "Kaggle",
+    "description": "Rudimentary machine learning plus data analysis on various datasets"
+  },
+  {
+    "link": "https://github.com/arora-aditya/leetcode",
+    "image_alt": "leetcode logo",
+    "title": "Leetcode",
+    "description": "Although not a project per se but it does the job of making me a better programmer"
+  },
+  {
+    "link": "https://devpost.com/software/whizzit",
+    "image_alt": "whiZZit logo",
+    "title": "whiZZit @ETHWaterloo",
+    "description": "StackOverflow but with a cryptocurrency bounty"
+  },
+  {
+    "link": "https://github.com/arora-aditya/slackr",
+    "image_alt": "slackr logo",
+    "title": "Slackr",
+    "description": "Command line slack clone made using sockets in Python"
+  }
+]

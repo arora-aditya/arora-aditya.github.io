@@ -3,6 +3,16 @@
     top: 0px;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
     transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    margin-bottom: 2rem;
+    width: 21vw;
+    margin: 0 1vw;
+    @media only screen and (max-width: 769px){
+      width: 50vw;
+      margin: 0vw;
+    }
+    @media only screen and (max-width: 577px){
+      width: 80vw;
+    }
     
     &:hover {
       top: -20px;
@@ -24,10 +34,13 @@
                   border-radius: 25px 25px 25px 25px;
       }
       
-      & > img {
+      img {
           border-radius: 25px 25px 0px 0px;
           width: 100%;
           height: auto;
+      }
+      .box {
+        padding: 2rem;
       }
     }
   }

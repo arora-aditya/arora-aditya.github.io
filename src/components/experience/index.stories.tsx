@@ -3,7 +3,7 @@ import { action } from '@storybook/addon-actions';
 import '@storybook/addon-console';
 import Experience from '../experience'
 
-import raytracer from '../../assets/images/raytracer.png'
+import draper from '../../assets/images/experience/draper.png'
 
 export default {
   title: 'Experience',
@@ -12,7 +12,8 @@ export default {
 
 export const Default = () =>  {
   return Experience({
-    company_logo: String(raytracer),
+    key: 0,
+    company_logo: String(draper),
     company_name: "DraperAI",
     company_website: "https://draperai.com",
     title: "Data Engineer",

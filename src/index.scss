@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'SF-Pro-Text-Regular';
+    src: url("./assets/font/SF-Pro-Text-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'SF-Pro-Text-Medium';
+    font-weight: bold;
+    src: url("./assets/font/SF-Pro-Text-Medium.otf") format("opentype");
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 15px;
+  body {
+    color: black;
+    font-family: 'SF-Pro-Text-Regular', sans-serif;
+    a {
+      text-decoration: none;
+      position: relative;
+      text-decoration: none;
+      -webkit-transition: color 0.5s;
+      transition: color 0.5s;
+      color: inherit!important;
+      &:visited {
+        color: inherit;
+      }
+      .highlight {
+        &:hover {
+          color: black;
+        }
+        &:before {
+          width: 100%;
+          height: 0.5rem;
+          position: absolute;
+          left: 0;
+          bottom: -0.25rem;
+          content: "";
+          display: block;
+          background-color: #ff9683;
+          z-index: -1;
+          opacity: 1;
+          -webkit-transition: height 0.5s;
+          transition: height 0.5s;
+        }
+        &:hover:before {
+          color: #ff9683;
+          background-color: #ff9683;
+          height: 1.5rem;
+        }
+      }
+    }
+    
+    p {
+      margin-block-start: 0em;
+      margin-block-end: 0em;
+    }
+    .primary {
+      font-family: 'SF-Pro-Text-Regular', sans-serif;
+      font-weight: 400;
+      font-size: 1.1rem;
+      line-height: 2rem;
+      color: #333;
+    }
+    .secondary {
+      color: #999;
+      line-height: 2rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+

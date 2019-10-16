@@ -1,0 +1,111 @@
+[
+  {
+    "company_name": "Wish",
+    "company_website": "https://wish.com",
+    "title": "Software Engineer",
+    "timeline": "Summer 2020",
+    "location": "San Francisco (Remote)",
+    "points": [
+      "Incoming Summer 2020 intern on the Product Payments team!"
+    ]
+  },
+  {
+    "company_name": "Sage Co",
+    "company_website": "https://thesage.co",
+    "title": "Chief Technology Officer",
+    "timeline": "May 2018 - Present",
+    "location": "Waterloo, ON",
+    "points": [
+      "Founded a digital agency run by active University of Waterloo students from across the globe aimed on creating excellent digital solutions for clients on a professional scale.",
+      "Responsible for guiding the technological direction of the company, to ensure that we have 100% uptime!"
+    ]
+  },
+  {
+    "company_name": "KitchenMate",
+    "company_website": "https://kitchenmate.com",
+    "title": "Software Engineer",
+    "timeline": "September 2019 - December 2019",
+    "location": "Toronto, ON",
+    "points": [
+      "Improved legibility and reduced frame jitter by 50% by adding support for on device text and custom animation rendering for new display on proprietary cooker using Python and Pillow",
+      "Built a top level overview dashboard with all internal high level KPIs in Metabase/PostgresQL to allow for effective decision making process on our corporate customers in a single glance",
+      "Increased customer food satisfaction by 30% by devising a data driven approach to menu design after analysing dish reviews to isolate metrics that better define the popularity of a dish",
+      "Developed over 70 dashboards in Postgres to measure KPIs across the board to promote data driven decision making at all levels of the company"
+    ]
+  },
+  {
+    "company_name": "DraperAI",
+    "company_website": "https://draperai.com",
+    "title": "Data Engineer",
+    "timeline": "January 2019 - April 2019",
+    "location": "Waterloo, ON",
+    "points": [
+      "Reduced customer conversion time by 15% by building a tool to entice new customers",
+      "Improved bid accuracy by 30% by analysing suggesting changes to core bidding algorithm",
+      "Found 3 high priority production issues affecting 10% of our marquee customers",
+      "Built an internal tool to detect and alert system downtime using SQL and Metabase"
+    ]
+  },
+  {
+    "company_name": "Machine Intelligence Lab",
+    "company_website": "https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/",
+    "title": "Undergraduate Research Assistant",
+    "timeline": "September 2018 - December 2018",
+    "location": "Waterloo, ON",
+    "points": [
+      "Built a NLP chatbot in Python and Dialogflow for grocery chain Loblaws under Prof Fakhri Karray to allow customers to ask contextual questions while in store",
+      "Ported over existing from slower excel sheet frameworks to PostGresQL to improve net performance by 30%",
+      "Developed a low latency API endpoint in Python from scratch to serve Loblaws customers"
+    ]
+  },
+  {
+    "company_name": "LCBO|next",
+    "company_website": "https://www.lcbonext.com/",
+    "title": "Data Scientist + Full Stack Developer",
+    "timeline": "May 2018 - September 2018",
+    "location": "Kitchener, ON",
+    "points": [
+      "Wrote complete CRUD web apps and REST APIs from scratch with less than 0.1% downtime to serve data to multiple internal applications to serve LCBOs customers",
+      "Managed and maintained the sole Kubernetes cluster running an Elasticsearch instance",
+      "Implemented an 85% accurate sales forecasting model from scratch to anticipate uptick in sales of products after incorporating the weather forecast",
+      "Visualised and analysed sales trends at top retail locations to classify products into priority based classes to support LCBO’s retail and supply chain divisions"
+    ]
+  },
+  {
+    "company_name": "WATonomous",
+    "company_website": "https://watonomous.ca/#/",
+    "title": "Core Perception Member",
+    "timeline": "January 2018 - May 2018",
+    "location": "Waterloo, ON",
+    "points": [
+      "Core Member of the perception team as part of GM’s AutoDrive Challenge",
+      "Implemented a 5% more effcient model to identify lane markings in OpenCV",
+      "Improved existing traffic sign detection computer vision models in Tensorflow by 15% using hyperparameter tuning and regularisation"
+    ]
+  },
+  {
+    "company_name": "Waterloop",
+    "company_website": "https://www.waterloop.ca/",
+    "title": "Web Lead",
+    "timeline": "September 2017 - March 2018",
+    "location": "Waterloo, ON",
+    "points": [
+      "Redesigned the entire new website as part of revamped branding in Fall 2017 with the help of Embedded JS templating on a Node.js server",
+      "Minimized code duplication on the new website using a template engine that allowed for 30% page load boost while making it easier to maintain",
+      "Improved page load time by 20% by creating responsive vector images in D3.js instead of using heavier and less efficient frameworks",
+      "Implemented an efficient static string method to improve memory management as part of the embedded systems team"
+    ]
+  },
+  {
+    "company_name": "FINO Bank",
+    "company_website": "https://www.finobank.com/",
+    "title": "Software Engineer",
+    "timeline": "Summer 2017",
+    "location": "Mumbai, MH",
+    "points": [
+      "Improved efficiency of backend script by 300 times by using hash tables and used this to implement an interactive dashboard to visualise revenue of top merchants and their sales breakdown",
+      "Conceptualised, designed and implemented a dashboard to track the performance of new merchants month on month to predict merchants who had a better chance to increase the revenue",
+      "Used d3js for the visualisation and Python for the back end."
+    ]
+  }
+]
