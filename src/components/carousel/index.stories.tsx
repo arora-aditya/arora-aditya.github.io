@@ -25,5 +25,23 @@ export const Default = () =>  {
     image_alt: "Raytracer output",
     title: "Ray Tracer",
     description: "A raytracer built in Rust, with support for shaders, materials and objects!"
+  }), Card({
+    link: "https://github.com/arora-aditya/just-another-ray-tracer",
+    image: String(raytracer),
+    image_alt: "Raytracer output",
+    title: "Ray Tracer",
+    description: "A raytracer built in Rust, with support for shaders, materials and objects!"
+  }), Card({
+    link: "https://github.com/arora-aditya/just-another-ray-tracer",
+    image: String(raytracer),
+    image_alt: "Raytracer output",
+    title: "Ray Tracer",
+    description: "A raytracer built in Rust, with support for shaders, materials and objects!"
+  }), Card({
+    link: "https://github.com/arora-aditya/just-another-ray-tracer",
+    image: String(raytracer),
+    image_alt: "Raytracer output",
+    title: "Ray Tracer",
+    description: "A raytracer built in Rust, with support for shaders, materials and objects!"
   })]});
 };

@@ -4,7 +4,7 @@ import './App.scss';
 import Card from './components/card';
 import Header from './components/header'
 import Experience from './components/experience';
-import Carousel from './components/carousel';
+import {Carousel} from './components/carousel';
 
 import raytracer from './assets/images/projects/raytracer.png'
 
@@ -31,6 +31,18 @@ const experience: Job[] = require('./assets/data/experience.json');
 const projects: Project[] = require('./assets/data/projects.json');
 
 function App() {
+  const project_cards = projects.map((project, i) => {
+    return (
+      Card({
+        key: i,
+        image: String(ProjectAssets[project.title]),
+        link: project.link,
+        image_alt: project.image_alt,
+        title: project.title,
+        description: project.description,
+      })
+    )
+  })
   return (
     <div className="App">
       <div className="container">
@@ -58,17 +70,8 @@ function App() {
           link: "https://github.com/arora-aditya"
         })}
         <div className="projects">
-          {projects.map((project, i) => {
-            return (
-              Card({
-                key: i,
-                image: String(ProjectAssets[project.title]),
-                link: project.link,
-                image_alt: project.image_alt,
-                title: project.title,
-                description: project.description,
-              })
-            )
+          {Carousel({
+            children: project_cards
           })}
         </div>
         {Carousel({children: [Card({
