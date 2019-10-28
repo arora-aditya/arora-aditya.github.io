@@ -2,7 +2,7 @@
   "name": "adityaarora",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://arora-aditya.com/website",
+  "homepage": "https://website.arora-aditya.com",
   "dependencies": {
     "@storybook/addon-console": "^1.2.1",
     "@testing-library/jest-dom": "^4.2.4",
