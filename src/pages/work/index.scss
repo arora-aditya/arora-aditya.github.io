@@ -1,0 +1,19 @@
+.work {
+  display: flex;
+  flex-direction: column;
+  .jobs {
+    .job {
+      margin-top: 1.5rem;
+      .primary {
+        font-weight: 500;
+      }
+      .secondary {
+        margin-bottom: 0.4rem;
+      }
+      .point {
+        color: #555;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

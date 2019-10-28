@@ -1,0 +1,19 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  img {
+    max-width: 8.5rem;
+  }
+  .hi-there {
+    padding-top: 2vw;
+    font-weight: 400;
+  }
+  .about-me {
+    div {
+      p {
+        display: block;
+        padding-top: 1rem;
+      }
+    }
+  }
+}

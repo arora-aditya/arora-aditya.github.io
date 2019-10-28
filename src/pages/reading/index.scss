@@ -1,0 +1,10 @@
+.reading {
+  display: flex;
+  flex-direction: column;
+  .category {
+    margin-bottom: 2rem;
+    .category-title {
+      font-weight: 500;
+    }
+  }
+}

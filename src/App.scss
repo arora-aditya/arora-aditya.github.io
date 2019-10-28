@@ -1,28 +1,19 @@
-.App {
-  .container {
-    max-width: 70%;
-    margin-left: 15%;
-    @media only screen and (max-width: 992px) and (min-width: 768px){
-      max-width: 85%;
-      margin-left: 7.5%;
-    }
-    @media only screen and (max-width: 769px) and (min-width: 577px){
-      max-width: 85%;
-      margin-left: 7.5%;
-    }
-    @media only screen and (max-width: 577px){
-      max-width: 90%;
-      margin-left: 5%;
-    }
+.app {
+  display: flex;
+  flex-direction: row;  
+  @media only screen and (max-width: 768px){
+    flex-direction: column;  
   }
-  .projects {
-    display: flex;
-    overflow-y: scroll;
-    margin-top: 1rem;
-    padding-bottom: 1rem;
-    &::-webkit-scrollbar {
-      width: 0px;  /* Remove scrollbar space */
-      background: transparent;  /* Optional: just make scrollbar invisible */
+  .app-content {
+    max-width: 40vw;
+    margin-left: 30vw;
+    padding-top: 10vh;
+    padding-left: 10vw;
+    @media only screen and (max-width: 768px){
+      max-width: 95vw;
+      margin-left: unset;
+      padding-top: 4vh;
+      padding-left: 4vw;
     }
   }
 }

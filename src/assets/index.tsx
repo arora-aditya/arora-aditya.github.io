@@ -16,6 +16,7 @@ import leetcode from './images/projects/leetcode.png';
 import whizzit from './images/projects/whizzitLogoVertical.png';
 import slackr from './images/projects/slackr.png';
 
+import me from './images/me.jpeg'
 
 const ExperienceAssets:{ [company_name: string] : string; } = {
   "Wish": wish,
@@ -39,4 +40,6 @@ const ProjectAssets:{ [company_name: string] : string; } = {
   "Slackr": slackr,
 };
 
-export { ExperienceAssets, ProjectAssets };
+
+
+export { ExperienceAssets, ProjectAssets, me };
