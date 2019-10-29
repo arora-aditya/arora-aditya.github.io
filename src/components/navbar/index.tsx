@@ -27,12 +27,12 @@ export default function Navbar() {
       <Link className={active === 2?"active": ""}to="work" onClick={() => setActive(2)}><p>Work</p></Link>
       <div className={`work-ex ${active === 2?"show": "hide"}`}>
         {experience.map((job: any, i:number) => {
-          return <div className="nohighlight" onClick={() => {
+          return <p className="nohighlight" onClick={() => {
              // @ts-ignore
             document.getElementById(job.company_name).scrollIntoView(
-              {behavior: "smooth", block: "end", inline: "nearest"}
+              {behavior: "smooth", block: "center", inline: "center"}
             );
-          }} key={i}><p>{job.company_name}</p></div>
+          }} key={i}>{job.company_name}</p>
         })}
       </div>
       <Link className={active === 3?"active": ""}to="writing" onClick={() => setActive(3)}><p>Writing</p></Link>

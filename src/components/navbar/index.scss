@@ -29,6 +29,8 @@
     }
   }
   .work-ex {
+    outline: none;
+    -webkit-tap-highlight-color: rgba(100, 255, 255, 0);
     cursor: pointer;
     font-weight: normal;
     color: #42444A;
@@ -40,6 +42,9 @@
     &.show {
       display: block;
       margin-left: 1vw;
+    }
+    p {
+      user-select: none;
     }
     a {
       margin-bottom: 10vh;
