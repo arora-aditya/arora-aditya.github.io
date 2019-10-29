@@ -1,8 +1,54 @@
 .app {
+  min-height:100vh;
   display: flex;
   flex-direction: row;  
   @media only screen and (max-width: 768px){
     flex-direction: column;  
+  }
+  &.light {
+    background: #FCFCFC;
+    a {
+      text-decoration: none;
+      position: relative;
+      color: inherit;
+      &:visited {
+        color: #42444A;
+      }
+      &.highlight {
+        text-decoration: underline;
+        color: #3873F9;
+      }
+      &.nohighlight {
+        text-decoration: none;
+        color: #3873F9;
+      }
+    }
+  }
+  &.dark {
+    background: #191D26;
+    color: #FBFDFF;
+    a {
+      &.active {
+        p {
+          color: #FBFDFF;
+          border-bottom: none;
+        }
+      }
+      text-decoration: none;
+      position: relative;
+      color: #FBFDFF;
+      &:visited {
+        color: #FBFDFF;
+      }
+      &.highlight {
+        text-decoration: underline;
+        color: #3873F9;
+      }
+      &.nohighlight {
+        text-decoration: none;
+        color: #3873F9;
+      }
+    }
   }
   .app-content {
     max-width: 40vw;
