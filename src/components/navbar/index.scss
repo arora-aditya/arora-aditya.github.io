@@ -33,6 +33,13 @@
         color: #3873F9;
         border-bottom: 1px solid #3873F9;
       }
+      &.active {
+        p {
+          width: fit-content;
+          border-bottom: none;
+          color: inherit;
+        }
+      }
     }
     .work-ex {
       outline: none;
