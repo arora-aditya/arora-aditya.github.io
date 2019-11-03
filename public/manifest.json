@@ -4,11 +4,11 @@
   "icons": [
     {
       "src": "favicon.png",
-      "sizes": "64x64",
+      "sizes": "234x204",
       "type": "image/png"
     }
   ],
-  "start_url": ".",
+  "start_url": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#000000"

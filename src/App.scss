@@ -6,6 +6,7 @@
     flex-direction: column;  
   }
   &.light {
+    transition: background 0.2s ease-out, color 0.2s ease-out;
     background: #FCFCFC;
     a {
       text-decoration: none;
@@ -27,6 +28,7 @@
   &.dark {
     background: #191D26;
     color: #FBFDFF;
+    transition: background 0.2s ease-out, color 0.2s ease-out;
     a {
       &.active {
         p {

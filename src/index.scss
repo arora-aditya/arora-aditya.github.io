@@ -28,26 +28,30 @@
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src:  url('./assets/font/SourceSansPro-Light.ttf') format('truetype');
+  src:  local('Avenir'), url('./assets/font/SourceSansPro-Light.ttf') format('truetype');
   font-weight: 300;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src:  url('./assets/font/SourceSansPro-Regular.ttf') format('truetype');
+  src:  local('Avenir'), url('./assets/font/SourceSansPro-Regular.ttf') format('truetype');
   font-weight: 400;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src:  url('./assets/font/SourceSansPro-SemiBold.ttf') format('truetype');
+  src: local('Avenir'), url('./assets/font/SourceSansPro-SemiBold.ttf') format('truetype');
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src:  url('./assets/font/SourceSansPro-Bold.ttf') format('truetype');
+  src:  local('Avenir'), url('./assets/font/SourceSansPro-Bold.ttf') format('truetype');
   font-weight: 700;
+  font-display: swap;
 }
 
 *, *:after, *:before {
@@ -63,7 +67,7 @@ html {
     height: 100vh;
     padding: 0;
     margin: 0;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', 'Avenir', sans-serif;
     font-weight: 300;
     outline: none;  
     p {

@@ -56,7 +56,7 @@ export default function App() {
         <ThemeSetStore.Provider value={dispatch}>
         <Navbar/>
         </ThemeSetStore.Provider>
-          <div className="app-content">
+          <main className="app-content">
             <Switch>
               <Route path="/reading">
                 {Reading()}
@@ -74,7 +74,7 @@ export default function App() {
                 {Home()}
               </Route>
             </Switch>
-          </div>
+          </main>
       </ThemeStore.Provider>
     </HashRouter>
   </div>)
