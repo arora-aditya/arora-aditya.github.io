@@ -36,7 +36,7 @@ export default function App() {
   let [state, dispatch] = useReducer(languageReducer, {theme: 'light'});
   
   useEffect(() => {
-    if(window.localStorage && state.theme != localStorage.getItem('theme')){
+    if(window.localStorage && state.theme !== localStorage.getItem('theme')){
       if(localStorage.getItem('theme') !== null){
         dispatch({type: 'update', theme: String(localStorage.getItem('theme'))})
       } 

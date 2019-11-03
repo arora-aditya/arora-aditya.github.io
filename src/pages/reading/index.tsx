@@ -23,7 +23,7 @@ export default function Reading() {
           {
             category.books.map((book, j) => {
               if(book.link){
-                return <a className="book highlight" key={j} target="blank" rel="noopener noreferrer" href={book.link}><p>{book.title} - {book.author}</p></a>
+                return <p key={j} className="book"><a className="highlight" target="blank" rel="noopener noreferrer" href={book.link}>{book.title.replace(/ /g, '\u00a0')}</a> - {book.author.replace(/ /g, '\u00a0')}</p>
               } else {
                 return <p className="book" key={j}>{book.title} - {book.author}</p>
               }

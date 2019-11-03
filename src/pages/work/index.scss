@@ -1,9 +1,10 @@
 .work {
+  width: fit-content;
   display: flex;
   flex-direction: column;
   .jobs {
     .job {
-      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
       .primary {
         font-weight: 500;
       }

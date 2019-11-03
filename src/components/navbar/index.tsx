@@ -33,7 +33,7 @@ export default function Navbar() {
   function toggleTheme(e: MouseEvent) {
     e.preventDefault()
     // @ts-ignore
-    dispatch({action: 'update', theme: theme == 'light' ? 'dark':'light'});
+    dispatch({action: 'update', theme: theme === 'light' ? 'dark':'light'});
     e.stopPropagation();
   }
   
@@ -42,7 +42,7 @@ export default function Navbar() {
       <div className="links">
         <div id="name">Aditya Arora</div>
         <Link className={active === 1?"active": ""} to="/" onClick={() => setActive(1)}><p>About</p></Link>
-        <Link className={active === 2?"active": ""} to="work" onClick={() => setActive(2)}><p>Work</p></Link>
+        <Link className={active === 2?"active": ""} id={active === 2?"work": ""} to="work" onClick={() => setActive(2)}><p>Work</p></Link>
         <div className={`work-ex ${active === 2?"show": "hide"}`}>
           {experience.map((job: any, i:number) => {
             return <p className="nohighlight" onClick={() => {
@@ -63,7 +63,7 @@ export default function Navbar() {
       </div>
       <div>
         <span className="theme" onClick={(e) => toggleTheme(e)}>
-          <img src={theme == "light" ? night:day} alt={theme == "light" ? "moon":"sun"}/>
+          <img src={theme === "light" ? night:day} alt={theme === "light" ? "moon":"sun"}/>
         </span>
       </div>
     </nav>
