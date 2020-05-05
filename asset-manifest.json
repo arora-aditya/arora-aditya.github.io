@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/website/static/css/main.4340fc6e.chunk.css",
+    "main.js": "/website/static/js/main.a0e38bde.chunk.js",
+    "main.js.map": "/website/static/js/main.a0e38bde.chunk.js.map",
+    "runtime-main.js": "/website/static/js/runtime-main.5c61511e.js",
+    "runtime-main.js.map": "/website/static/js/runtime-main.5c61511e.js.map",
+    "static/js/2.0b2352eb.chunk.js": "/website/static/js/2.0b2352eb.chunk.js",
+    "static/js/2.0b2352eb.chunk.js.map": "/website/static/js/2.0b2352eb.chunk.js.map",
+    "index.html": "/website/index.html",
+    "precache-manifest.cb99f354da92cb53f600ac32cc27e9d3.js": "/website/precache-manifest.cb99f354da92cb53f600ac32cc27e9d3.js",
+    "service-worker.js": "/website/service-worker.js",
+    "static/css/main.4340fc6e.chunk.css.map": "/website/static/css/main.4340fc6e.chunk.css.map",
+    "static/js/2.0b2352eb.chunk.js.LICENSE.txt": "/website/static/js/2.0b2352eb.chunk.js.LICENSE.txt",
+    "static/media/LCBO.png": "/website/static/media/LCBO.80faf82e.png",
+    "static/media/index.scss": "/website/static/media/SourceSansPro-SemiBold.83476a89.ttf",
+    "static/media/WATonomous.png": "/website/static/media/WATonomous.37aa8369.png",
+    "static/media/draper.png": "/website/static/media/draper.773f181d.png",
+    "static/media/fino.png": "/website/static/media/fino.80b45840.png",
+    "static/media/kaggle.jpg": "/website/static/media/kaggle.1f28f0da.jpg",
+    "static/media/kitchenmate.png": "/website/static/media/kitchenmate.fc581784.png",
+    "static/media/leapmetry.png": "/website/static/media/leapmetry.771cf8b7.png",
+    "static/media/me.jpeg": "/website/static/media/me.71b147d6.jpeg",
+    "static/media/raytracer.png": "/website/static/media/raytracer.b1eb0671.png",
+    "static/media/slackr.png": "/website/static/media/slackr.8733f083.png",
+    "static/media/uw.png": "/website/static/media/uw.dd9b4752.png",
+    "static/media/whizzitLogoVertical.png": "/website/static/media/whizzitLogoVertical.fa4bcf47.png",
+    "static/media/wish.png": "/website/static/media/wish.955397e5.png",
+    "static/media/wloop.png": "/website/static/media/wloop.1c9fac4c.png",
+    "static/media/ww.png": "/website/static/media/ww.02b9c37f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5c61511e.js",
+    "static/js/2.0b2352eb.chunk.js",
+    "static/css/main.4340fc6e.chunk.css",
+    "static/js/main.a0e38bde.chunk.js"
+  ]
+}
