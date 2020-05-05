@@ -1,26 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.4fb07f9f.chunk.css",
-    "main.js": "/static/js/main.78c702fc.chunk.js",
-    "main.js.map": "/static/js/main.78c702fc.chunk.js.map",
+    "main.css": "/static/css/main.9f162d7f.chunk.css",
+    "main.js": "/static/js/main.c46b3397.chunk.js",
+    "main.js.map": "/static/js/main.c46b3397.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.fa52ac4d.js",
     "runtime-main.js.map": "/static/js/runtime-main.fa52ac4d.js.map",
-    "static/js/2.0b2352eb.chunk.js": "/static/js/2.0b2352eb.chunk.js",
-    "static/js/2.0b2352eb.chunk.js.map": "/static/js/2.0b2352eb.chunk.js.map",
+    "static/js/2.60f6dc84.chunk.js": "/static/js/2.60f6dc84.chunk.js",
+    "static/js/2.60f6dc84.chunk.js.map": "/static/js/2.60f6dc84.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.c2d972ece070dddebf44ebfb1a384810.js": "/precache-manifest.c2d972ece070dddebf44ebfb1a384810.js",
+    "precache-manifest.fee6013abf9ac22f431bf93864d6a958.js": "/precache-manifest.fee6013abf9ac22f431bf93864d6a958.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.4fb07f9f.chunk.css.map": "/static/css/main.4fb07f9f.chunk.css.map",
-    "static/js/2.0b2352eb.chunk.js.LICENSE.txt": "/static/js/2.0b2352eb.chunk.js.LICENSE.txt",
+    "static/css/main.9f162d7f.chunk.css.map": "/static/css/main.9f162d7f.chunk.css.map",
+    "static/js/2.60f6dc84.chunk.js.LICENSE.txt": "/static/js/2.60f6dc84.chunk.js.LICENSE.txt",
     "static/media/LCBO.png": "/static/media/LCBO.80faf82e.png",
     "static/media/index.scss": "/static/media/SourceSansPro-SemiBold.83476a89.ttf",
     "static/media/WATonomous.png": "/static/media/WATonomous.37aa8369.png",
+    "static/media/day.svg": "/static/media/day.f21b1b03.svg",
     "static/media/draper.png": "/static/media/draper.773f181d.png",
     "static/media/fino.png": "/static/media/fino.80b45840.png",
     "static/media/kaggle.jpg": "/static/media/kaggle.1f28f0da.jpg",
     "static/media/kitchenmate.png": "/static/media/kitchenmate.fc581784.png",
     "static/media/leapmetry.png": "/static/media/leapmetry.771cf8b7.png",
     "static/media/me.jpeg": "/static/media/me.71b147d6.jpeg",
+    "static/media/night.svg": "/static/media/night.268af63a.svg",
     "static/media/raytracer.png": "/static/media/raytracer.b1eb0671.png",
     "static/media/slackr.png": "/static/media/slackr.8733f083.png",
     "static/media/uw.png": "/static/media/uw.dd9b4752.png",
@@ -31,8 +33,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.fa52ac4d.js",
-    "static/js/2.0b2352eb.chunk.js",
-    "static/css/main.4fb07f9f.chunk.css",
-    "static/js/main.78c702fc.chunk.js"
+    "static/js/2.60f6dc84.chunk.js",
+    "static/css/main.9f162d7f.chunk.css",
+    "static/js/main.c46b3397.chunk.js"
   ]
 }
