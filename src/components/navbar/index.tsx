@@ -41,8 +41,8 @@ export default function Navbar() {
     <nav className="navbar">
       <div className="links">
         <div id="name">Aditya Arora</div>
-        <Link className={active === 1?"active": ""} to="/" onClick={() => setActive(1)}><p>About</p></Link>
-        <Link className={active === 2?"active": ""} id={active === 2?"work": ""} to="work" onClick={() => setActive(2)}><p>Work</p></Link>
+        <Link className={`highlight ${active === 1?"active": ""}`} to="/" onClick={() => setActive(1)}><p>About</p></Link>
+        <Link className={`highlight ${active === 2?"active": ""}`} id={active === 2?"work": ""} to="work" onClick={() => setActive(2)}><p>Work</p></Link>
         <div className={`work-ex ${active === 2?"show": "hide"}`}>
           {experience.map((job: any, i:number) => {
             return <p className="nohighlight" onClick={() => {
@@ -53,9 +53,9 @@ export default function Navbar() {
             }} key={i}>{job.company_name}</p>
           })}
         </div>
-        <Link className={active === 3?"active": ""}to="writing" onClick={() => setActive(3)}><p>Writing</p></Link>
-        <Link className={active === 4?"active": ""}to="reading" onClick={() => setActive(4)}><p>Reading</p></Link>
-        <Link className={active === 5?"active": ""}to="projects" onClick={() => setActive(5)}><p>Projects</p></Link>
+        <Link className={`highlight ${active === 3?"active": ""}`} to="writing" onClick={() => setActive(3)}><p>Writing</p></Link>
+        <Link className={`highlight ${active === 4?"active": ""}`} to="reading" onClick={() => setActive(4)}><p>Reading</p></Link>
+        <Link className={`highlight ${active === 5?"active": ""}`} to="projects" onClick={() => setActive(5)}><p>Projects</p></Link>
         {
           // <Link className={active === 6?"active": ""}to="links" onClick={() => setActive(6)}><p>Links</p></Link>
           // <Link className={active === 7?"active": ""}to="people" onClick={() => setActive(7)}><p>People</p></Link>

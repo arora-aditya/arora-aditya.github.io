@@ -12,5 +12,9 @@
     .secondary {
       color: #888;
     }
+    &:hover:after {
+      width: 0% !important;
+    }
   }
+  
 }

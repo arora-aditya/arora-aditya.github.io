@@ -34,13 +34,11 @@
       width: fit-content;
       p {
         width: fit-content;
-        color: #3873F9;
       }
-      &.active {
+      &.highlight.active {
         p {
           width: fit-content;
           border-bottom: none;
-          color: inherit;
         }
       }
     }
