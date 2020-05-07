@@ -4,12 +4,13 @@
   flex-direction: column;
   .jobs {
     .job {
-      margin-bottom: 1.5rem;
+      margin-bottom: 2rem;
       .primary {
         font-weight: 500;
       }
       .secondary {
-        margin-bottom: 0.5rem;
+        font-size: 0.9rem;
+        margin: 0.25rem 0 0.5rem 0;
       }
       .point {
         opacity: 0.7;
