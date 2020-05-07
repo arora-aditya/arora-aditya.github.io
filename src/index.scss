@@ -28,28 +28,28 @@
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src:  local('Avenir'), url('./assets/font/SourceSansPro-Light.ttf') format('truetype');
+  src:  url('./assets/font/SourceSansPro-Light.ttf') format('truetype'), local('Avenir');
   font-weight: 300;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src:  local('Avenir'), url('./assets/font/SourceSansPro-Regular.ttf') format('truetype');
+  src:  url('./assets/font/SourceSansPro-Regular.ttf') format('truetype'), local('Avenir');
   font-weight: 400;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src: local('Avenir'), url('./assets/font/SourceSansPro-SemiBold.ttf') format('truetype');
+  src: url('./assets/font/SourceSansPro-SemiBold.ttf') format('truetype'), local('Avenir');
   font-weight: 600;
   font-display: swap;
 }
 
 @font-face {
   font-family: 'Source Sans Pro';
-  src:  local('Avenir'), url('./assets/font/SourceSansPro-Bold.ttf') format('truetype');
+  src:  url('./assets/font/SourceSansPro-Bold.ttf') format('truetype'), local('Avenir');
   font-weight: 700;
   font-display: swap;
 }
