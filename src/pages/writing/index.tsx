@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+
+import removeCDATA from '../utils'
 import './index.scss';
 
 export default function Writing() {
@@ -35,12 +37,6 @@ export default function Writing() {
     })
   }
   
-  function removeCDATA(text: string | null){
-    if(text){
-      return text.replace("<![CDATA[", "").replace("]]>", "")
-    }
-    return ""
-  }
   function generateBlogListings(responseText: string){
     const parser = new DOMParser();
     const xml = parser.parseFromString(responseText, 'text/xml');
