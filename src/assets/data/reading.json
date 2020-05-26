@@ -30,51 +30,11 @@
   {
     "title": "Currently Reading",
     "books": [
-      {
-        "title": "Steve Jobs",
-        "author": "Walter Isaacson"
-      },
-      {
-        "title": "Why We Sleep",
-        "author": "Matthew Walker"
-      },
-      {
-        "title": "How Google Works",
-        "author": "Eric Schmidt & Johnathan Rosenberg"
-      }
     ]
   },
   {
     "title": "Want To Read",
     "books": [
-      {
-        "title": "The Hitchhiker's Guide to the Galaxy",
-        "author": "Douglas Adams"
-      },
-      {
-        "title": "Tribe of Mentors",
-        "author": "Timothy Ferriss"
-      },
-      {
-        "title": "Outliers",
-        "author": "Malcolm Gladwell"
-      },
-      {
-        "title": "Astrophysics for People in a Hurry",
-        "author": "Neil deGrasse Tyson"
-      },
-      {
-        "title": "1984",
-        "author": "George Orwell"
-      },
-      {
-        "title": "Rich Dad Poor Dad",
-        "author": "Robert Kiyosaki"
-      },
-      {
-        "title": "The 7 Habits of Highly Effective People",
-        "author": "Stephen Covey"
-      }
     ]
   }
 ]

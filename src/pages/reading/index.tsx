@@ -40,17 +40,32 @@ export default function Reading() {
     const parser = new DOMParser();
     const xml = parser.parseFromString(responseText, 'text/xml');
 
-    let items: Book[] = Array.from(xml.getElementsByTagName('item')).map((item, i) => {
+    Array.from(xml.getElementsByTagName('item')).map((item, i) => {
       const link = removeCDATA(item.getElementsByTagName('link')[0].textContent);
       const title = removeCDATA(item.getElementsByTagName('title')[0].textContent);
       const author = removeCDATA(item.getElementsByTagName('dc:creator')[0].textContent);
-      return {
-        "title": title,
-        "author": author,
-        "link": link,
+      const currently_reading = removeCDATA(item.getElementsByTagName('currently_reading')[0].textContent);
+      const upcoming = removeCDATA(item.getElementsByTagName('upcoming')[0].textContent);
+
+      if(!upcoming && !currently_reading){
+        reading[0].books = [{
+          "title": title,
+          "author": author,
+          "link": link,
+        } as Book].concat(reading[0].books)
+      } else if (currently_reading) {
+        reading[2].books = [{
+          "title": title,
+          "author": author,
+        } as Book].concat(reading[2].books)
+      } else if (upcoming) {
+        reading[3].books = [{
+          "title": title,
+          "author": author,
+        } as Book].concat(reading[3].books)
       }
     });
-    reading[0].books = items.concat(reading[0].books)
+    
     setLoading(false)
   }
   
