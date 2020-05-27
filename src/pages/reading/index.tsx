@@ -39,7 +39,8 @@ export default function Reading() {
   function generateReviewedList(responseText: string){
     const parser = new DOMParser();
     const xml = parser.parseFromString(responseText, 'text/xml');
-
+    
+    let upcoming_books: Book[] = [], currently: Book[] = [], older: Book[] = []
     Array.from(xml.getElementsByTagName('item')).map((item, i) => {
       const link = removeCDATA(item.getElementsByTagName('link')[0].textContent);
       const title = removeCDATA(item.getElementsByTagName('title')[0].textContent);
@@ -48,23 +49,29 @@ export default function Reading() {
       const upcoming = removeCDATA(item.getElementsByTagName('upcoming')[0].textContent);
 
       if(!upcoming && !currently_reading){
-        reading[0].books = [{
+        older.push({
           "title": title,
           "author": author,
           "link": link,
-        } as Book].concat(reading[0].books)
+        } as Book)
+         
       } else if (currently_reading) {
-        reading[2].books = [{
+        currently.push({
           "title": title,
           "author": author,
-        } as Book].concat(reading[2].books)
+        } as Book)
       } else if (upcoming) {
-        reading[3].books = [{
+        upcoming_books.push({
           "title": title,
           "author": author,
-        } as Book].concat(reading[3].books)
+        } as Book)
       }
+      
     });
+    
+    reading[0].books = older.concat(reading[0].books)
+    reading[2].books = currently.concat(reading[2].books)
+    reading[3].books = upcoming_books.concat(reading[3].books)
     
     setLoading(false)
   }
