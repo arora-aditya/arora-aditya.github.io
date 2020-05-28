@@ -2,7 +2,7 @@ import React, { useReducer, useEffect } from 'react';
 import './App.scss';
 
 import {
-  HashRouter,
+  BrowserRouter as Router,
   Switch,
   Route
 } from "react-router-dom";
@@ -50,7 +50,7 @@ export default function App() {
   },[state.theme])
   
   return (<div className={`app ${state.theme}`}>
-    <HashRouter>
+    <Router>
       <ScrollToTop />
       <ThemeStore.Provider value={state.theme}>
         <ThemeSetStore.Provider value={dispatch}>
@@ -76,7 +76,7 @@ export default function App() {
             </Switch>
           </main>
       </ThemeStore.Provider>
-    </HashRouter>
+    </Router>
   </div>)
 };
 
