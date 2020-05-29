@@ -12,13 +12,13 @@ const experience = require('../../assets/data/experience.json');
 
 const workex: { [path: string]: number; }= {
   "name": 1,
-  "#/": 1,
-  "#/work": 2,
-  "#/writing": 3,
-  "#/reading": 4,
-  "#/projects": 5,
-  // "#/links": 6,
-  // "#/people": 7
+  "/": 1,
+  "/work": 2,
+  "/writing": 3,
+  "/reading": 4,
+  "/projects": 5,
+  // "/links": 6,
+  // "/people": 7
 }
 
 export default function Navbar() {
@@ -26,8 +26,8 @@ export default function Navbar() {
   const dispatch = useContext(ThemeSetStore);
   const theme = useContext(ThemeStore);
   
-  if(active !== workex[window.location.hash]){
-    setActive(workex[window.location.hash])
+  if(active !== workex[window.location.pathname]){
+    setActive(workex[window.location.pathname])
   }
   
   function toggleTheme(e: MouseEvent) {
