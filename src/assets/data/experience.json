@@ -1,15 +1,5 @@
 [
   {
-    "company_name": "Wish",
-    "company_website": "https://wish.com",
-    "title": "Software Engineering Intern",
-    "timeline": "May 2020 - Present",
-    "location": "San Francisco (Remote)",
-    "points": [
-      "Currently working on the Product Payments team!"
-    ]
-  },
-  {
     "company_name": "Sage Co",
     "company_website": "https://thesage.co",
     "title": "Partner, Technology Lead",
@@ -19,6 +9,20 @@
       "Designing the online presence and building websites for SMBs in North America (portfolio to date includes community websites, local newspapers, law firms, and small print shops)",
       "Responsible for managing the technical direction of the company, and leading the charge on all things technical",
       "Services include branding, web design & development, custom CMS, website audits, Shopify stores, and SEO optimization"
+    ]
+  },
+  {
+    "company_name": "Wish",
+    "company_website": "https://wish.com",
+    "title": "Software Engineer",
+    "timeline": "May 2020 - September 2020",
+    "location": "San Francisco (Remote)",
+    "points": [
+      "Improved transaction success by 3% for an annualized improvement in GMV by $15M by setting up remove item retry mechanism for insufficient fund transactions",
+      "Improved traceability of fraudulent actors by marking user sessions with a multi-factor authentication session key to log high risk events ",
+      "Increased average customer satisfaction by 3% by designing a user flow to allow users to change their payment method after placing an order",
+      "Setup infrastructure using Pytest fixtures to enable improved testing coverage for key code paths",
+      "Reduced fraud through post-purchase address change by incorporating address verification flows"
     ]
   },
   {
