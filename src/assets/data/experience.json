@@ -1,5 +1,15 @@
 [
   {
+    "company_name": "Wish",
+    "company_website": "https://wish.com",
+    "title": "Data Scientist",
+    "timeline": "Jan 2021 - Apr 2021",
+    "location": "San Francisco (Remote)",
+    "points": [
+    ]
+  },
+  
+  {
     "company_name": "Sage Co",
     "company_website": "https://thesage.co",
     "title": "Partner, Technology Lead",

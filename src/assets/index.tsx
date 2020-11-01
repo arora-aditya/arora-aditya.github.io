@@ -16,7 +16,7 @@ import leetcode from './images/projects/leetcode.png';
 import whizzit from './images/projects/whizzitLogoVertical.png';
 import slackr from './images/projects/slackr.png';
 
-import me from './images/me.jpeg'
+import me from './images/me.webp'
 
 const ExperienceAssets:{ [company_name: string] : string; } = {
   "Wish": wish,
