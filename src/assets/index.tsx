@@ -17,6 +17,7 @@ import whizzit from './images/projects/whizzitLogoVertical.png';
 import slackr from './images/projects/slackr.png';
 
 import me from './images/me.webp'
+import me_jpeg from './images/me.jpeg'
 
 const ExperienceAssets:{ [company_name: string] : string; } = {
   "Wish": wish,
@@ -42,4 +43,4 @@ const ProjectAssets:{ [company_name: string] : string; } = {
 
 
 
-export { ExperienceAssets, ProjectAssets, me };
+export { ExperienceAssets, ProjectAssets, me, me_jpeg };

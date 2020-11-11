@@ -1,7 +1,7 @@
 import React from 'react';
 import './index.scss';
 
-import {me} from '../../assets';
+import { me, me_jpeg } from '../../assets';
 
 const about_me = [
   <p>I'm a Software Developer based in Waterloo, Canada. Over last summer I worked at <a className="highlight" href="https://wish.com" target="_blank" rel="noopener noreferrer">Wish</a> as a Software Developer on the Product Payments Team. In my free time, I help run a design agency <a className="highlight" href="https://thesage.co" target="_blank" rel="noopener noreferrer">Sage Co</a> to help develop websites and brand identities for small businesses.</p>,
@@ -20,7 +20,11 @@ const socials: {[social: string] : string} = {
 export default function Home() {
   return (
     <div className="home">
-      <img src={me} alt="me"/>
+      <picture>
+        <source src={me} type="image/webp" />
+        <source src={me_jpeg} type="image/jpeg" />
+        <img src={me_jpeg} alt="me"/>
+      </picture>
       <p className="hi-there">Hi there,</p>
       <div className="about-me">
         {about_me.map((text, i) => {
