@@ -6,6 +6,8 @@
     "timeline": "Jan 2021 - Apr 2021",
     "location": "San Francisco (Remote)",
     "points": [
+      "Reduced refund rate by X% by building a model to numerically score on their odds of refund abuse and applying friction to users gaming the system",
+      "Improved net GMV by Y% by segmenting users into explainable clusters and driving more data driven product impressions using those clusters"
     ]
   },
   
