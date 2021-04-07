@@ -6,8 +6,9 @@
     "timeline": "Jan 2021 - Apr 2021",
     "location": "San Francisco (Remote)",
     "points": [
-      "Reduced refund rate by X% by building a model to numerically score on their odds of refund abuse and applying friction to users gaming the system",
-      "Improved net GMV by Y% by segmenting users into explainable clusters and driving more data driven product impressions using those clusters"
+      "Built a 94% accurate model to predict the probability of the user refunding an item within 90 days", 
+      "Reduced refund abuse by 30% by developing a single scoring mechanism for each user to accurately reflect the abuse by them and their linked accounts against Wish refund policies",
+      "Improved revenue by 2% by using XGBoost to conduct explainable user segmentation to isolate clusters of users that purchase upto 10x more from user generated content"
     ]
   },
   
