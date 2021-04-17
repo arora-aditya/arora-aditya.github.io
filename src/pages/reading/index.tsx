@@ -45,16 +45,21 @@ export default function Reading() {
       const link = removeCDATA(item.getElementsByTagName('link')[0].textContent);
       const title = removeCDATA(item.getElementsByTagName('title')[0].textContent);
       const author = removeCDATA(item.getElementsByTagName('dc:creator')[0].textContent);
-      const currently_reading = removeCDATA(item.getElementsByTagName('currently_reading')[0].textContent);
-      const upcoming = removeCDATA(item.getElementsByTagName('upcoming')[0].textContent);
-
-      if(!upcoming && !currently_reading){
+      const published = (removeCDATA(item.getElementsByTagName('published')[0].textContent) === "true");
+      const currently_reading = (removeCDATA(item.getElementsByTagName('currently_reading')[0].textContent) === "true");
+      const upcoming = (removeCDATA(item.getElementsByTagName('upcoming')[0].textContent) === "true");
+      if(!upcoming && !currently_reading && published){
         older.push({
           "title": title,
           "author": author,
           "link": link,
         } as Book)
          
+      } else if (!upcoming && !currently_reading && !published) {
+        older.push({
+          "title": title,
+          "author": author,
+        } as Book)
       } else if (currently_reading) {
         currently.push({
           "title": title,
