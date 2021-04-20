@@ -16,7 +16,7 @@
     "company_name": "Sage Co",
     "company_website": "https://thesage.co",
     "title": "Partner, Technology Lead",
-    "timeline": "May 2018 - Present",
+    "timeline": "May 2018 - Feb 2021",
     "location": "Waterloo, ON",
     "points": [
       "Designing the online presence and building websites for SMBs in North America (portfolio to date includes community websites, local newspapers, law firms, and small print shops)",
@@ -28,7 +28,7 @@
     "company_name": "Wish",
     "company_website": "https://wish.com",
     "title": "Software Engineer",
-    "timeline": "May 2020 - September 2020",
+    "timeline": "May 2020 - Sept 2020",
     "location": "San Francisco (Remote)",
     "points": [
       "Improved transaction success by 3% for an annualized improvement in GMV by $15M by setting up remove item retry mechanism for insufficient fund transactions",
@@ -42,7 +42,7 @@
     "company_name": "KitchenMate",
     "company_website": "https://kitchenmate.com",
     "title": "Software Engineer",
-    "timeline": "September 2019 - December 2019",
+    "timeline": "Sept 2019 - Dec 2019",
     "location": "Toronto, ON",
     "points": [
       "Improved legibility and reduced frame jitter by 50% by adding support for on device text and custom animation rendering for new display on proprietary cooker using Python and Pillow",
@@ -55,7 +55,7 @@
     "company_name": "DraperAI",
     "company_website": "https://draperai.com",
     "title": "Data Engineer",
-    "timeline": "January 2019 - April 2019",
+    "timeline": "Jan 2019 - Apr 2019",
     "location": "Waterloo, ON",
     "points": [
       "Reduced customer conversion time by 15% by building a tool to entice new customers",
@@ -68,7 +68,7 @@
     "company_name": "Machine Intelligence Lab",
     "company_website": "https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/",
     "title": "Undergraduate Research Assistant",
-    "timeline": "September 2018 - December 2018",
+    "timeline": "Sept 2018 - Dec 2018",
     "location": "Waterloo, ON",
     "points": [
       "Built a NLP chatbot in Python and Dialogflow for grocery chain Loblaws under Prof Fakhri Karray to allow customers to ask contextual questions while in store",
@@ -80,7 +80,7 @@
     "company_name": "LCBO|next",
     "company_website": "https://www.lcbonext.com/",
     "title": "Data Scientist + Full Stack Developer",
-    "timeline": "May 2018 - September 2018",
+    "timeline": "May 2018 - Sept 2018",
     "location": "Kitchener, ON",
     "points": [
       "Wrote complete CRUD web apps and REST APIs from scratch with less than 0.1% downtime to serve data to multiple internal applications to serve LCBOs customers",
@@ -93,7 +93,7 @@
     "company_name": "WATonomous",
     "company_website": "https://watonomous.ca/#/",
     "title": "Core Perception Member",
-    "timeline": "January 2018 - May 2018",
+    "timeline": "Jan 2018 - May 2018",
     "location": "Waterloo, ON",
     "points": [
       "Core Member of the perception team as part of GM’s AutoDrive Challenge",
@@ -105,7 +105,7 @@
     "company_name": "Waterloop",
     "company_website": "https://www.waterloop.ca/",
     "title": "Web Lead",
-    "timeline": "September 2017 - March 2018",
+    "timeline": "Sept 2017 - Mar 2018",
     "location": "Waterloo, ON",
     "points": [
       "Redesigned the entire new website as part of revamped branding in Fall 2017 with the help of Embedded JS templating on a Node.js server",
