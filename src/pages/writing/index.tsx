@@ -43,13 +43,13 @@ export default function Writing() {
 
     let items = Array.from(xml.getElementsByTagName('item')).map((item, i) => {
       return (
-        <a className="post" key={i} href={removeCDATA(item.getElementsByTagName('link')[0].textContent)} target="_blank" rel="noopener noreferrer" >
           <div>
-            <p className="primary">{removeCDATA(item.getElementsByTagName('title')[0].textContent)}</p>
-            <p className="date">{formatPostDate(removeCDATA(item.getElementsByTagName('pubDate')[0].textContent))}</p>
-            <p className="secondary">{removeCDATA(item.getElementsByTagName('description')[0].textContent)}</p>
+            <a className="post" key={i} href={removeCDATA(item.getElementsByTagName('link')[0].textContent)} target="_blank" rel="noopener noreferrer">
+              <p className="primary">{removeCDATA(item.getElementsByTagName('title')[0].textContent)}</p>
+              <p className="date">{formatPostDate(removeCDATA(item.getElementsByTagName('pubDate')[0].textContent))}</p>
+              <p className="secondary">{removeCDATA(item.getElementsByTagName('description')[0].textContent)}</p>
+            </a>
           </div>
-        </a>
       )
     });
     setData(items)

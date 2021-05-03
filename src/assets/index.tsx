@@ -15,6 +15,8 @@ import kaggle from './images/projects/kaggle.jpg';
 import leetcode from './images/projects/leetcode.png';
 import whizzit from './images/projects/whizzitLogoVertical.png';
 import slackr from './images/projects/slackr.png';
+import rtchess from './images/projects/rtchess.png';
+import scrambled from './images/projects/scrambled.svg';
 
 import me from './images/me.webp'
 import me_jpeg from './images/me.jpeg'
@@ -32,6 +34,8 @@ const ExperienceAssets:{ [company_name: string] : string; } = {
 };
 
 const ProjectAssets:{ [company_name: string] : string; } = {
+  "RTChess": rtchess,
+  "Scrambled": scrambled,
   "RayTracer": raytracer,
   "WaterlooWorks2": ww,
   "LeapMetry": leapmetry,

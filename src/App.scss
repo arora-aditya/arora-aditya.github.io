@@ -26,36 +26,36 @@
       }
       &.highlight {
         color: #3873F9;
-      }
-      &.nohighlight {
-        color: #3873F9;
-      }
-      &:after {
-        content: "";
-        border-bottom:solid transparent 2px;
-        border-radius: 2px;
-        position: absolute;
-        display:block;
-        left: 0;
-        margin:0 auto;
-        top:90%;
-        background-color: #3873F9;
-        opacity: 0.5;
-        height: 1px;
-        width: 0%;
-        transition: width 0.3s ease;
-      }
-      &.active {
+        &:after {
+          content: "";
+          border-bottom:solid transparent 2px;
+          border-radius: 2px;
+          position: absolute;
+          display:block;
+          left: 0;
+          margin:0 auto;
+          top:90%;
+          background-color: #3873F9;
+          opacity: 0.5;
+          height: 1px;
+          width: 0%;
+          transition: width 0.3s ease;
+        }
+        &.active {
+          &:hover {
+            &:after {
+              width: 100%;
+            }
+          }
+        }
         &:hover {
           &:after {
             width: 100%;
           }
         }
       }
-      &:hover {
-        &:after {
-          width: 100%;
-        }
+      &.nohighlight {
+        color: #3873F9;
       }
     }
   }

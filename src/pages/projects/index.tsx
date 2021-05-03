@@ -21,7 +21,7 @@ export default function Projects() {
         <a key={i} href={project.link} target="_blank" rel="noopener noreferrer">
           <div className="project">
             <div className="img" style={{backgroundImage: `url(${ProjectAssets[project.title]})`}}></div>
-            <p className="primary">{project.title}</p>
+            <a className="primary highlight">{project.title}</a>
             <p className="secondary">{project.description}</p>
           </div>
         </a>
