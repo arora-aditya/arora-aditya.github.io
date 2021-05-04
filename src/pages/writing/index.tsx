@@ -1,13 +1,55 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
+import styled from 'styled-components';
 
-import removeCDATA from '../utils'
-import './index.scss';
+import removeCDATA from '../utils';
+import FancyLink from '../../components/FancyLink';
+
+const WritingContainer = styled.div`
+display: flex;
+flex-direction: column;
+`
+
+const BlogPost = styled(FancyLink)`
+margin-bottom: 1rem;
+&:hover:after {
+  width: 0% !important;
+}
+`
+
+const BlogTitle = styled.p`
+font-weight: 500;
+`
+
+const BlogDate = styled.p`
+margin-bottom: 0.1rem;
+`
+
+const BlogBlurb = styled.p`
+color: #888;
+`
 
 export default function Writing() {
   const [data, setData] = useState([<></>])
   const [loading, setLoading] = useState(true);
   const [sent, setSent] = useState(false);
-  function getBlog() {
+  const generateBlogListings = useCallback((responseText: string) => {
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(responseText, 'text/xml');
+
+    let items = Array.from(xml.getElementsByTagName('item')).map((item, i) => {
+      return (
+          <BlogPost key={i} href={removeCDATA(item.getElementsByTagName('link')[0].textContent)} target="_blank" rel="noopener noreferrer">
+            <BlogTitle>{removeCDATA(item.getElementsByTagName('title')[0].textContent)}</BlogTitle>
+            <BlogDate>{formatPostDate(removeCDATA(item.getElementsByTagName('pubDate')[0].textContent))}</BlogDate>
+            <BlogBlurb>{removeCDATA(item.getElementsByTagName('description')[0].textContent)}</BlogBlurb>
+          </BlogPost>
+      )
+    });
+    setData(items);
+    setLoading(false);
+  }, []);
+  
+  const getBlog = useCallback(() => {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
       if (this.readyState === 4 && this.status === 200) {
@@ -17,13 +59,13 @@ export default function Writing() {
     xhttp.open("GET", "https://blogs.arora-aditya.com/rss.xml", true);
     xhttp.send();
     setSent(true);
-  }
+  }, [generateBlogListings])
   
   useEffect(() => {
     if(!sent){
       getBlog();
     }
-  }, [sent]);
+  }, [sent, getBlog]);
   
   function formatPostDate(date: string) {
     if (typeof Date.prototype.toLocaleDateString !== 'function') {
@@ -36,30 +78,11 @@ export default function Writing() {
       year: 'numeric',
     })
   }
-  
-  function generateBlogListings(responseText: string){
-    const parser = new DOMParser();
-    const xml = parser.parseFromString(responseText, 'text/xml');
-
-    let items = Array.from(xml.getElementsByTagName('item')).map((item, i) => {
-      return (
-          <div>
-            <a className="post" key={i} href={removeCDATA(item.getElementsByTagName('link')[0].textContent)} target="_blank" rel="noopener noreferrer">
-              <p className="primary">{removeCDATA(item.getElementsByTagName('title')[0].textContent)}</p>
-              <p className="date">{formatPostDate(removeCDATA(item.getElementsByTagName('pubDate')[0].textContent))}</p>
-              <p className="secondary">{removeCDATA(item.getElementsByTagName('description')[0].textContent)}</p>
-            </a>
-          </div>
-      )
-    });
-    setData(items)
-    setLoading(false)
-  }
 
   
   return (
-    <div className="writing">
+    <WritingContainer>
       {loading ?  <p>Loading...</p> : data }
-    </div>
+    </WritingContainer>
   )
 }

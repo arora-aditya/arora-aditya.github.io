@@ -1,6 +1,8 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
+import styled from 'styled-components';
+import FancyLink from '../../components/FancyLink';
+
 import removeCDATA from '../utils'
-import './index.scss';
 
 interface Book {
   title: string;
@@ -13,30 +15,32 @@ interface Category {
   books: Book[];
 }
 
-const reading: Category[] =  require('../../assets/data/reading.json');
+const ReadingContainer = styled.div`
+display: flex;
+flex-direction: column;
+`
+
+const ReadingCategory = styled.div`
+margin-bottom: 2rem;
+`
+
+const ReadingCategoryTitle = styled.p`
+font-weight: 500;
+`
+
+const ReadingCategoryBook = styled.p`
+margin-bottom: 0.1rem;
+`
+
+const DEFAULT_READING = require('../../assets/data/reading.json');
 
 export default function Reading() {
-  const [loading, setLoading] = useState(true);
+  const [data, setData] = useState([<p key="loading">Loading...</p>])
   const [sent, setSent] = useState(false);
-  function getBookReviews() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState === 4 && this.status === 200) {
-        generateReviewedList(this.responseText);
-      }
-    };
-    xhttp.open("GET", "https://blogs.arora-aditya.com/book-rss.xml", true);
-    xhttp.send();
-    setSent(true);
-  }
+  const [loaded, setLoaded] = useState(false);
+  const [reading, setReading] = useState<Category[]>(JSON.parse(JSON.stringify(DEFAULT_READING)));
   
-  useEffect(() => {
-    if(!sent){
-      getBookReviews();
-    }
-  }, [sent]);
-  
-  function generateReviewedList(responseText: string){
+  const generateReviewedList = useCallback((responseText: string) => {
     const parser = new DOMParser();
     const xml = parser.parseFromString(responseText, 'text/xml');
     
@@ -71,43 +75,67 @@ export default function Reading() {
           "author": author,
         } as Book)
       }
-      
+      return null;
     });
-    
-    reading[0].books = older.concat(reading[0].books)
-    reading[2].books = currently.concat(reading[2].books)
-    reading[3].books = upcoming_books.concat(reading[3].books)
-    
-    setLoading(false)
-  }
+    setReading([
+      { 
+        ...DEFAULT_READING[0],
+        books: [...older, ...DEFAULT_READING[0].books]
+      },
+      {
+        ...DEFAULT_READING[1],
+        books: [...currently, ...DEFAULT_READING[1].books]
+      },
+      {
+        ...DEFAULT_READING[2],
+        books: [...upcoming_books, ...DEFAULT_READING[2].books]
+      },
+    ]);
+    setLoaded(true);
+  }, []);
   
-  if(loading) {
-    return (
-      <div className="reading">
-        <p>Loading...</p>
-      </div>
-    )
-    
-  }
+  useEffect(() => {
+    if(loaded){
+      setData(reading.map((category, i) => {
+        if(category.books.length > 0){
+          return <ReadingCategory key={i}>
+            <ReadingCategoryTitle>{category.title}</ReadingCategoryTitle>
+            {
+              category.books.map((book, j) => {
+                if(book.link){
+                  return <ReadingCategoryBook key={j}><FancyLink className="highlight" href={book.link} target="_blank" rel="noopener noreferrer">{book.title.replace(/ /g, '\u00a0')}</FancyLink> - {book.author.replace(/ /g, '\u00a0')}</ReadingCategoryBook>
+                } else {
+                  return <ReadingCategoryBook key={j}>{book.title} - {book.author}</ReadingCategoryBook>
+                }
+              })
+            }
+          </ReadingCategory>
+        } else {
+          return <ReadingCategory key={i}></ReadingCategory>
+        }
+      }));
+    }
+  }, [reading, loaded])
   
-  return <div className="reading">
-    {reading.map((category, i) => {
-      if(category.books.length > 0){
-        return <div key={i} className="category">
-          <p className="category-title">{category.title}</p>
-          {
-            category.books.map((book, j) => {
-              if(book.link){
-                return <p key={j} className="book"><a className="highlight" href={book.link}>{book.title.replace(/ /g, '\u00a0')}</a> - {book.author.replace(/ /g, '\u00a0')}</p>
-              } else {
-                return <p className="book" key={j}>{book.title} - {book.author}</p>
-              }
-            })
-          }
-        </div>
-      } else {
-        return ""
+  const getBookReviews = useCallback(() => {
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+      if (this.readyState === 4 && this.status === 200) {
+        generateReviewedList(this.responseText);
       }
-    })}
-  </div>
+    };
+    xhttp.open("GET", "https://blogs.arora-aditya.com/book-rss.xml", true);
+    xhttp.send();
+    setSent(true);
+  }, [generateReviewedList]);
+  
+  useEffect(() => {
+    if(!sent){
+      getBookReviews();
+    }
+  }, [sent, getBookReviews]);
+  
+  return <ReadingContainer>
+    {data}
+  </ReadingContainer>
 }

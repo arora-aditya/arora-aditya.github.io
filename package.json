@@ -4,36 +4,24 @@
   "private": true,
   "homepage": "https://website.arora-aditya.com",
   "dependencies": {
-    "@storybook/addon-console": "^1.2.1",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
-    "@types/react-burger-menu": "^2.6.1",
     "@types/react-dom": "^16.9.0",
     "@types/react-router-dom": "^5.1.4",
-    "gh-pages": "^2.2.0",
-    "node-sass": "^4.13.1",
-    "pure-react-carousel": "^1.27.1",
+    "@types/styled-components": "^5.1.9",
     "react": "^16.13.1",
-    "react-burger-menu": "^2.6.13",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.4.1",
     "react-xml-parser": "^1.1.6",
+    "styled-components": "^5.2.3",
     "typescript": "~3.7.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && cp CNAME build/CNAME",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,12 +37,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@storybook/addon-actions": "^5.3.18",
-    "@storybook/addon-links": "^5.3.18",
-    "@storybook/addons": "^5.3.18",
-    "@storybook/preset-create-react-app": "^2.1.1",
-    "@storybook/react": "^5.3.18"
   }
 }

@@ -63,16 +63,18 @@
 html {
   height: 100vh;
   font-size: 16px;
-  body {
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-    font-family: 'Source Sans Pro', 'Avenir', sans-serif;
-    font-weight: 300;
-    outline: none;  
-    p {
-      margin-block-start: 0em;
-      margin-block-end: 0em;
-    }
-  }
+}
+
+body {
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  font-family: 'Source Sans Pro', 'Avenir', sans-serif;
+  font-weight: 300;
+  outline: none;  
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
 }
