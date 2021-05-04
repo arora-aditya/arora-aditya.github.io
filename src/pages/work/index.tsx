@@ -21,7 +21,7 @@ display: flex;
 flex-direction: column;
 `
 
-const Job = styled.div`
+const JobDiv = styled.div`
 margin-bottom: 2rem;
 `
 
@@ -45,7 +45,7 @@ export default function Home() {
     <WorkContainer>
       {experience.map((job, i) => {
         return (
-          <Job key={i} id={job.company_name}>
+          <JobDiv key={i} id={job.company_name}>
             <JobTitle>
               {job.title},{' '}
               <FancyLink className="highlight" href={job.company_website} target="blank" rel="noopener noreferrer">
@@ -56,7 +56,7 @@ export default function Home() {
             {job.points.map((point, j) => {
               return <JobPoint key={j}>- {point}</JobPoint>
             })}
-          </Job>
+          </JobDiv>
         );
       })}
     </WorkContainer>

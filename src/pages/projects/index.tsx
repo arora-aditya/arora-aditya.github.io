@@ -21,7 +21,7 @@ flex-wrap: wrap;
 align-items: flex-start;
 `
 
-const Project = styled.div`
+const ProjectDiv = styled.div`
 margin-bottom: 2vh;
 display: flex;
 flex-direction: column;
@@ -62,11 +62,11 @@ export default function Projects() {
     <ProjectsContainer>
     {projects.map((project, i) => 
       <FancyLink key={i} href={project.link} target="_blank" rel="noopener noreferrer">
-        <Project>
+        <ProjectDiv>
           <ProjectImg title={project.title}></ProjectImg>
           <ProjectTitle className="highlight">{project.title}</ProjectTitle>
           <ProjectDescription>{project.description}</ProjectDescription>
-        </Project>
+        </ProjectDiv>
       </FancyLink>
     )}
     </ProjectsContainer>
