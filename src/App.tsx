@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
+import ReactGA from "react-ga4";
 import styled, { ThemeProvider } from 'styled-components';
 
 import {
-  BrowserRouter as Router,
   Switch,
-  Route
+  Route,
+  useLocation,
 } from "react-router-dom";
 
 import ThemeSetStore from './theme'
@@ -53,6 +54,18 @@ padding-left: 10vw;
 export default function App() {
   const [theme, setTheme] = useState("light");
   const [readFromLS, setReadFromLS] = useState(false);
+
+  const location = useLocation();
+
+  useEffect(() => {
+    ReactGA.initialize("G-QM6R472DRJ");
+  }, [])
+
+  useEffect(() => {
+    ReactGA.send({ hitType: "pageview", page: location.pathname });
+  }, [location])
+
+
   
   useEffect(() => {
     if(!readFromLS){
@@ -72,7 +85,6 @@ export default function App() {
   }, [theme])
   
   return (<AppContainer className={`app ${theme}`}>
-    <Router>
       <ScrollToTop />
       <ThemeProvider theme={{bg: theme}}>
         <ThemeSetStore.Provider value={setTheme}>
@@ -98,7 +110,6 @@ export default function App() {
             </Switch>
           </AppContent>
       </ThemeProvider>
-    </Router>
   </AppContainer>)
 };
 

@@ -1,12 +1,22 @@
 [
   {
+    "company_name": "Wish",
+    "company_website": "https://wish.com",
+    "title": "Data Scientist",
+    "timeline": "Sep 2021 - Present",
+    "location": "San Francisco (Remote)",
+    "points": [
+      "Returning to the Consumer DS team!"
+    ]
+  },
+  {
     "company_name": "ECE, University of Waterloo",
     "company_website": "https://uwaterloo.ca/electrical-computer-engineering/about/people/dw2wrig",
     "title": "Software Engineer",
-    "timeline": "May 2021 - Present",
+    "timeline": "May 2021 - Aug 2021",
     "location": "Waterloo, ON",
     "points": [
-      "Working under Prof. Derek Wright to build a internal platform using Postgres, Node and React for managing the ECE departments’ CEAB requirements"
+      "Worked under Prof. Derek Wright to build a internal platform using Postgres, Node and React for managing the ECE departments’ CEAB requirements"
     ]
   },
   {
@@ -21,7 +31,6 @@
       "Improved revenue by 2% by using XGBoost to conduct explainable user segmentation to isolate clusters of users that purchase upto 10x more from user generated content"
     ]
   },
-  
   {
     "company_name": "Sage Co",
     "company_website": "https://thesage.co",
