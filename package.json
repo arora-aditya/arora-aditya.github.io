@@ -9,6 +9,7 @@
     "@types/react-dom": "^17.0.3",
     "@types/react-router-dom": "^5.1.4",
     "@types/styled-components": "^5.1.9",
+    "luxon": "^2.1.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-ga4": "^1.0.5",
@@ -38,5 +39,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/luxon": "^2.0.7"
   }
 }
