@@ -15,6 +15,7 @@ import kaggle from './images/projects/kaggle.jpg';
 import leetcode from './images/projects/leetcode.png';
 import whizzit from './images/projects/whizzitLogoVertical.png';
 import slackr from './images/projects/slackr.png';
+import golinks from './images/projects/link.png';
 import rtchess from './images/projects/rtchess.png';
 import scrambled from './images/projects/scrambled.svg';
 
@@ -43,6 +44,7 @@ const ProjectAssets:{ [company_name: string] : string; } = {
   "Leetcode": leetcode,
   "whiZZit @ETHWaterloo": whizzit,
   "Slackr": slackr,
+  "Go links": golinks, 
 };
 
 

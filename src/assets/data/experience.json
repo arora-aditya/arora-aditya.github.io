@@ -2,11 +2,14 @@
   {
     "company_name": "Wish",
     "company_website": "https://wish.com",
-    "title": "Data Scientist",
-    "timeline": "Sep 2021 - Present",
-    "location": "San Francisco (Remote)",
+    "title": "Machine Learning Engineer",
+    "timeline": "Sep 2021 - December 2021",
+    "location": "San Francisco CA, (Remote)",
     "points": [
-      "Returning to the Consumer DS team!"
+      "Built a k8s service to predict the lifetime value of ~200M users on a daily basis to be used for return on ad-spend prediction, financial forecasting and A/B test analysis for better user targeting",
+      "Onboarded and supported 1 new intern, and 3 full time data scientists and engineers to the team",
+      "Setup core ETL infrastructure to enable Spark/Airflow to work with new in-house data lake"
+
     ]
   },
   {
@@ -24,7 +27,7 @@
     "company_website": "https://wish.com",
     "title": "Data Scientist",
     "timeline": "Jan 2021 - Apr 2021",
-    "location": "San Francisco (Remote)",
+    "location": "San Francisco CA (Remote)",
     "points": [
       "Built a 94% accurate model to predict the probability of the user refunding an item within 90 days", 
       "Reduced refund abuse by 30% by developing a single scoring mechanism for each user to accurately reflect the abuse by them and their linked accounts against Wish refund policies",
@@ -48,7 +51,7 @@
     "company_website": "https://wish.com",
     "title": "Software Engineer",
     "timeline": "May 2020 - Sept 2020",
-    "location": "San Francisco (Remote)",
+    "location": "San Francisco CA (Remote)",
     "points": [
       "Improved transaction success by 3% for an annualized improvement in GMV by $15M by setting up remove item retry mechanism for insufficient fund transactions",
       "Improved traceability of fraudulent actors by marking user sessions with a multi-factor authentication session key to log high risk events ",
