@@ -17,6 +17,7 @@ import Work from './pages/work';
 import Writing from './pages/writing';
 import Projects from './pages/projects';
 import Reading from './pages/reading';
+import NowNowNow from './pages/now';
 
 const AppContainer = styled.div`
 min-height:100vh;
@@ -103,6 +104,9 @@ export default function App() {
               </Route>
               <Route path="/work">
                 <Work />
+              </Route>
+              <Route path="/now">
+                <NowNowNow />
               </Route>
               <Route path="/">
                 <Home />
