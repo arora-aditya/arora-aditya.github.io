@@ -2,6 +2,8 @@ import React, { Fragment, useEffect, useState } from 'react';
 import styled from 'styled-components';
 import FancyLink from '../../components/FancyLink';
 
+import useMusic from '../../hooks/useMusic';
+
 export const Text = ({ text } : any) => {
   if (!text) {
     return null;
@@ -124,6 +126,8 @@ var localDate = new Date(last_updated);
 export default function NowNowNow() {
     const [dataSet, setDataSet] = useState(false);
     const [data, setData] = useState({page: {last_edited_time: "2022-03-05T23:53:00.000Z"}, blocksWithChildren: []});
+    const {nowPlaying, artist, song, dataExists, url, lastListenedAt} = useMusic();
+
     useEffect(() => {
         const getData = async () => {
             const d = await fetch('https://lichess-proxy.herokuapp.com/nownownow')
@@ -138,6 +142,9 @@ export default function NowNowNow() {
     }
 
     return (
+      <Fragment>
         <Post last_updated={data["page"].last_edited_time} blocks={data.blocksWithChildren} />
+        <p>{dataExists ? <span>{nowPlaying ? `Currently listening to ` : `Last listened to `} <FancyLink href={url} className="highlight">{`${song} by ${artist}`}</FancyLink>{lastListenedAt}</span> : "can't reach spotify yet to get the last song"}</p>
+      </Fragment> 
     )
 }
