@@ -84,14 +84,20 @@ const renderBlock = (block: any) => {
         </details>
       );
     case "image":
+      const Figure = styled.figure`
+max-width: 100%;
+img {
+  max-width: 90%;
+}
+`
       const src =
         value.type === "external" ? value.external.url : value.file.url;
       const caption = value.caption ? value.caption[0]?.plain_text : "";
       return (
-        <figure>
+        <Figure>
           <img src={src} alt={caption} />
           {caption && <figcaption>{caption}</figcaption>}
-        </figure>
+        </Figure>
       );
     default:
       return `❌ Unsupported block (${
@@ -105,8 +111,7 @@ p {
   font-family: 'Source Sans Pro';
   display: block;
   padding-top: 1rem;
-}
-`
+}`
 
 export function Post({ last_updated, blocks }: any) {
 var localDate = new Date(last_updated);
@@ -122,6 +127,9 @@ var localDate = new Date(last_updated);
     </Now>
   );
 }
+
+const NowContainer = styled.div`
+margin-bottom: 30vh`
 
 export default function NowNowNow() {
     const [dataSet, setDataSet] = useState(false);
@@ -142,9 +150,9 @@ export default function NowNowNow() {
     }
 
     return (
-      <Fragment>
+      <NowContainer>
         <Post last_updated={data["page"].last_edited_time} blocks={data.blocksWithChildren} />
         <p>{dataExists ? <span>{nowPlaying ? `Currently listening to ` : `Last listened to `} <FancyLink href={url} className="highlight">{`${song} by ${artist}`}</FancyLink>{lastListenedAt}</span> : "can't reach spotify yet to get the last song"}</p>
-      </Fragment> 
+      </NowContainer> 
     )
 }
