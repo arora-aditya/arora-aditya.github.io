@@ -1,8 +1,18 @@
 [
   {
+    "company_name": "Google",
+    "company_website": "https://google.com",
+    "title": "Software Engineer",
+    "timeline": "Starting Aug 2022",
+    "location": "Waterloo, ON",
+    "points": [
+      "Working on the GCloud - cost optimization team"
+    ]
+  },
+  {
     "company_name": "Wish",
     "company_website": "https://wish.com",
-    "title": "Machine Learning Engineer",
+    "title": "ML Engineering Intern",
     "timeline": "Sep 2021 - December 2021",
     "location": "San Francisco CA, (Remote)",
     "points": [
@@ -15,7 +25,7 @@
   {
     "company_name": "ECE, University of Waterloo",
     "company_website": "https://uwaterloo.ca/electrical-computer-engineering/about/people/dw2wrig",
-    "title": "Software Engineer",
+    "title": "Software Engineer - Research Assistant",
     "timeline": "May 2021 - Aug 2021",
     "location": "Waterloo, ON",
     "points": [
@@ -25,7 +35,7 @@
   {
     "company_name": "Wish",
     "company_website": "https://wish.com",
-    "title": "Data Scientist",
+    "title": "Data Scientist Intern",
     "timeline": "Jan 2021 - Apr 2021",
     "location": "San Francisco CA (Remote)",
     "points": [
@@ -49,7 +59,7 @@
   {
     "company_name": "Wish",
     "company_website": "https://wish.com",
-    "title": "Software Engineer",
+    "title": "Software Engineering Intern",
     "timeline": "May 2020 - Sept 2020",
     "location": "San Francisco CA (Remote)",
     "points": [
@@ -63,7 +73,7 @@
   {
     "company_name": "KitchenMate",
     "company_website": "https://kitchenmate.com",
-    "title": "Software Engineer",
+    "title": "Software Engineering Intern",
     "timeline": "Sept 2019 - Dec 2019",
     "location": "Toronto, ON",
     "points": [
@@ -76,7 +86,7 @@
   {
     "company_name": "DraperAI",
     "company_website": "https://draperai.com",
-    "title": "Data Engineer",
+    "title": "Data Engineering Intern",
     "timeline": "Jan 2019 - Apr 2019",
     "location": "Waterloo, ON",
     "points": [
@@ -89,7 +99,7 @@
   {
     "company_name": "Machine Intelligence Lab",
     "company_website": "https://uwaterloo.ca/centre-pattern-analysis-machine-intelligence/",
-    "title": "Undergraduate Research Assistant",
+    "title": "ML Engineer - Research Assistant",
     "timeline": "Sept 2018 - Dec 2018",
     "location": "Waterloo, ON",
     "points": [
@@ -101,7 +111,7 @@
   {
     "company_name": "LCBO|next",
     "company_website": "https://www.lcbonext.com/",
-    "title": "Data Scientist + Full Stack Developer",
+    "title": "Data Scientist // Full Stack Developer Intern",
     "timeline": "May 2018 - Sept 2018",
     "location": "Kitchener, ON",
     "points": [
@@ -139,7 +149,7 @@
   {
     "company_name": "FINO Bank",
     "company_website": "https://www.finobank.com/",
-    "title": "Software Engineer",
+    "title": "Software Engineer Intern",
     "timeline": "Summer 2017",
     "location": "Mumbai, MH",
     "points": [
