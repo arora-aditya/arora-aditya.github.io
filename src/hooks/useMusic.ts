@@ -33,7 +33,7 @@ export default function useMusic() {
             }
           });
     
-          xhr.open("GET", "https://lichess-proxy.herokuapp.com/spotify");
+          xhr.open("GET", "https://backend.arora-aditya.com/spotify");
           xhr.send();
         };
         getData();

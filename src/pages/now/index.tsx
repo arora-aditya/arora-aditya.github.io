@@ -138,7 +138,7 @@ export default function NowNowNow() {
 
     useEffect(() => {
         const getData = async () => {
-            const d = await fetch('https://lichess-proxy.herokuapp.com/nownownow')
+            const d = await fetch("https://backend.arora-aditya.com/nownownow")
             const j = await d.json()
             setData(j)
             setDataSet(true)
