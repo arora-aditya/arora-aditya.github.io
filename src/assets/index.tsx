@@ -20,7 +20,7 @@ import rtchess from './images/projects/rtchess.png';
 import scrambled from './images/projects/scrambled.svg';
 
 import me from './images/me.webp'
-import me_jpeg from './images/me.jpeg'
+import me_jpeg from './images/me.jpg'
 
 const ExperienceAssets:{ [company_name: string] : string; } = {
   "Wish": wish,

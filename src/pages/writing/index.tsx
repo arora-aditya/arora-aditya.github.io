@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 
-import removeCDATA from '../utils';
+import removeCDATA from '../../utils';
 import FancyLink from '../../components/FancyLink';
 
 const WritingContainer = styled.div`
