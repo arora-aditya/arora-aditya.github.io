@@ -42,20 +42,20 @@ export default function useReading() {
                 "author": author,
                 "link": link,
               } as Book;
-            pubDateTimes.push([pubDate, book]);
             older.push(book)
           } else if (!upcoming && !currently_reading && !published) {
             const book = {
                 "title": title,
                 "author": author,
               } as Book;
-            pubDateTimes.push([pubDate, book]);
             older.push(book)
           } else if (currently_reading) {
-            currently.push({
+            const book = {
               "title": title,
               "author": author,
-            } as Book)
+            }
+            currently.push(book);
+            pubDateTimes.push([pubDate, book]);
           } else if (upcoming) {
             upcoming_books.push({
               "title": title,

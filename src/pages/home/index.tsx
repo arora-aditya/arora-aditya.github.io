@@ -48,7 +48,7 @@ justify-content: space-between;
 export default function Home() {
   const {nowPlaying, artist, song, dataExists, url, lastListenedAt} = useMusic();
   const {lastRead, dataExists: readingExist} = useReading();
-  const formattedLastRead = lastRead && <span>last read <FancyLink href={`https://www.goodreads.com/search?q=${lastRead[1].title}`} className="highlight" target="_blank">{lastRead[1].title}</FancyLink> by {lastRead[1].author} - {lastRead[0].toRelative()}</span>
+  const formattedLastRead = lastRead && <span>currently reading <FancyLink href={`https://www.goodreads.com/search?q=${lastRead[1].title}`} className="highlight" target="_blank">{lastRead[1].title}</FancyLink> by {lastRead[1].author} - started {lastRead[0].toRelative()}</span>
 
   const about_me = [
     <p>I'm a Software Engineer and Data Scientist based in Canada. I'm currently working at <FancyLink className="highlight" href="https://google.ca" target="_blank" rel="noopener noreferrer">Google</FancyLink> as a Software Engineer on the GCloud - Cost Optimization team. My past experience has been a mix of full-stack and data science.</p>,
