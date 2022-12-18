@@ -79,9 +79,7 @@ export default function useReading() {
             books: [...upcoming_books, ...DEFAULT_READING[2].books]
           },
         ]);
-        const ma = pubDateTimes.reduce((a, b) => {
-            return a[0] > b[0] ? a : b
-        });
+        const ma = pubDateTimes[Math.floor(Math.random()*pubDateTimes.length)];
         setLastRead(ma);
         setDataExists(true);
         
