@@ -4,19 +4,19 @@
   "private": true,
   "homepage": "https://website.arora-aditya.com",
   "dependencies": {
-    "@types/node": "^15.0.1",
-    "@types/react": "^17.0.5",
-    "@types/react-dom": "^17.0.3",
+    "@types/node": "^15.14.9",
+    "@types/react": "^17.0.85",
+    "@types/react-dom": "^17.0.26",
     "@types/react-router-dom": "^5.1.4",
     "@types/styled-components": "^5.1.9",
-    "luxon": "^2.1.1",
+    "luxon": "^2.5.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "react-ga4": "^1.0.5",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "5.0.0",
+    "react-ga4": "^1.4.1",
+    "react-router-dom": "^5.3.4",
+    "react-scripts": "5.0.1",
     "react-xml-parser": "^1.1.6",
-    "styled-components": "^5.2.3",
+    "styled-components": "^5.3.11",
     "typescript": "~4.2.4"
   },
   "scripts": {
@@ -41,6 +41,11 @@
     ]
   },
   "devDependencies": {
-    "@types/luxon": "^2.0.7"
+    "@types/luxon": "^2.4.0"
+  },
+  "resolutions": {
+    "css-select": "^4.3.0",
+    "nth-check": "^2.1.1",
+    "postcss": "^8.4.31"
   }
 }
