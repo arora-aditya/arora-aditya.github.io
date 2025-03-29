@@ -1,0 +1,54 @@
+# Cursor Rules for React TypeScript Project
+
+# File Organization
+- Keep all React components in the `src/components` directory
+- Place page components in the `src/pages` directory
+- Store custom hooks in the `src/hooks` directory
+- Keep utility functions in the `src/utils` directory
+- Place theme-related code in the `src/theme` directory
+- Store static assets in the `src/assets` directory
+
+# Component Structure
+- Each component should have its own directory under `src/components`
+- Component files should be named using PascalCase (e.g., `Button.tsx`)
+- Include a `index.ts` file in each component directory for clean exports
+- Keep component-specific styles in the same directory as the component
+
+# TypeScript Guidelines
+- Use TypeScript for all new files
+- Define interfaces and types in separate files under `src/types` if they're shared
+- Use `.tsx` extension for files containing JSX
+- Use `.ts` extension for plain TypeScript files
+
+# Testing
+- Place test files next to the components they test
+- Use `.test.ts` or `.test.tsx` for test files
+- Follow the pattern: `ComponentName.test.tsx`
+
+# Styling
+- Use CSS modules for component-specific styles
+- Keep global styles in `src/index.css`
+- Follow BEM naming convention for CSS classes
+- Use theme variables from `src/theme` for consistent styling
+
+# Code Quality
+- Use functional components with hooks
+- Keep components small and focused
+- Use proper TypeScript types and avoid `any`
+- Follow React best practices and patterns
+
+# Git
+- Keep commits atomic and focused
+- Use meaningful commit messages
+- Follow conventional commits format
+
+# Dependencies
+- Keep dependencies up to date
+- Document major dependency changes in PRs
+- Use exact versions in package.json
+
+# Performance
+- Implement proper code splitting
+- Use React.memo() for expensive components
+- Optimize images and assets
+- Follow React performance best practices 
