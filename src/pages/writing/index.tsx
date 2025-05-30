@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import styled from 'styled-components';
 
 import removeCDATA from '../../utils';
-import FancyLink from '../../components/FancyLink';
+import FancyLink from '../../components/fancy-link';
 
 const WritingContainer = styled.div`
 display: flex;

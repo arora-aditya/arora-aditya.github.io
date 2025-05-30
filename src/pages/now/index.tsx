@@ -1,6 +1,6 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import styled from 'styled-components';
-import FancyLink from '../../components/FancyLink';
+import FancyLink from '../../components/fancy-link';
 
 import useMusic from '../../hooks/useMusic';
 

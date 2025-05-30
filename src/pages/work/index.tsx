@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FancyLink from '../../components/FancyLink';
+import FancyLink from '../../components/fancy-link';
 
 interface Job {
   company_logo: string;
