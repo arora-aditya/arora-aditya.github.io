@@ -2,11 +2,46 @@
   {
     "company_name": "Google",
     "company_website": "https://google.com",
-    "title": "Software Engineer",
-    "timeline": "Jul 2022 - Present",
+    "title": "AI Uber Tech Lead",
+    "timeline": "May 2026 - Present",
     "location": "Waterloo, ON",
     "points": [
-      "Working on the GCloud - cost optimization team"
+      "Leading internal and external AI engineering efforts within Google Cloud FinOps (see: https://cloud.google.com/blog/topics/cost-management/introducing-spend-caps-ai-cost-visibility-next26)"
+    ]
+  },
+  {
+    "company_name": "Google",
+    "company_website": "https://google.com",
+    "title": "Technical Lead - Cloud Optimization",
+    "timeline": "Dec 2024 - Jun 2026",
+    "location": "Waterloo, ON",
+    "points": [
+      "Leading engineering efforts as TL of Cost Optimization under Google Cloud FinOps"
+    ]
+  },
+  {
+    "company_name": "Google",
+    "company_website": "https://google.com",
+    "title": "Software Developer III",
+    "timeline": "Apr 2024 - Dec 2024",
+    "location": "Waterloo, ON",
+    "points": [
+      "Led multi-quarter transformation of Committed Use Discount recommendations offering by optimizing into a SQL based architecture to improve pipeline run-time by 50%, and cutting resource costs by 60%",
+      "Architected, led and implemented release of Committed Use Discount scenario modelling launched at FinOps X San Diego across a team of 5 SWEs",
+      "Mitigated 10+ team wide production incidents, and drove postmortem efforts that led to a 10% improvement in data pipeline reliability and runtime",
+      "Owned and expanded CUD recommendations offering to non-USD customers, unlocking potential annualized customer savings over $100Ms, while mindful of customers' negotiated contracts, on a large scale Java map-reduce pipeline processing 1 trillion line items daily",
+      "Built a single pane of glass view of the team's operational health dashboard including 80+ metrics on SLO/SLA, performance, reliability and production incidents",
+      "Organized, directed and tracked team progress as scrum leader for infrastructure data pipelines, driving daily standups, biweekly syncs, demos and retrospectives"
+    ]
+  },
+  {
+    "company_name": "Google",
+    "company_website": "https://google.com",
+    "title": "Software Developer II",
+    "timeline": "Jul 2022 - Apr 2024",
+    "location": "Waterloo, ON",
+    "points": [
+      "Working on the Google Cloud - Cost Optimization team"
     ]
   },
   {
