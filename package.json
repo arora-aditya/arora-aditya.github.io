@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://website.arora-aditya.com",
+  "engines": {
+    "node": "22.x"
+  },
   "dependencies": {
     "@types/node": "^15.14.9",
     "@types/react": "^17.0.85",
